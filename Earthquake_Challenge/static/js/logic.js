@@ -171,3 +171,6 @@ d3.json(plates).then(function(data1) {
   // Creating a GeoJSON layer with the retrieved data.
   L.geoJSON(data1, { style: myStyle} ).addTo(tectonic);
 });
+
+    // Then we add the tectonic layer to our map.
+    tectonic.addTo(map);
